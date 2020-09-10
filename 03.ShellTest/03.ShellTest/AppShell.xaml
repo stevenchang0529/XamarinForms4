@@ -17,5 +17,7 @@
         <ShellContent Title="首頁" ContentTemplate="{DataTemplate local:Home}"  />
         <ShellContent x:Name="about" Title="關於" ContentTemplate="{DataTemplate local:About}"  />
     </FlyoutItem>
+    
+    <MenuItem Clicked="MenuItem_Clicked" Text="官網連結"/>
 
 </Shell>

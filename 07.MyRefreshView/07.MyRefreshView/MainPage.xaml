@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_07.MyRefreshView.MainPage">
+
+    <RefreshView x:Name="refview" Refreshing="refview_Refreshing" RefreshColor="Teal">
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="lbl" Text="資料還沒更新" FontSize="20" TextColor="Red"/>
+            </StackLayout>
+        </ScrollView>
+    </RefreshView>
+    
+    
+</ContentPage>

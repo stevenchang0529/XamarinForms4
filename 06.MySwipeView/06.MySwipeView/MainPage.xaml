@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_06.MySwipeView.MainPage">
+
+    <StackLayout>
+        <SwipeView Margin="10,0">
+            <SwipeView.RightItems>
+                <SwipeItems>
+                    <SwipeItem Text="刪除"
+                       BackgroundColor="LightGreen"
+                               Invoked="SwipeItem_Invoked"
+                        />
+                    <SwipeItem Text="封存"
+                       BackgroundColor="LightPink"
+                               Invoked="SwipeItem_Invoked_1"
+                        />
+                </SwipeItems>
+            </SwipeView.RightItems>
+
+            <Grid HeightRequest="60"
+          BackgroundColor="LightGray">
+                <Label Text="請往左滑"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+            </Grid>
+        </SwipeView>
+        
+        
+        
+        <Label x:Name="lbl"/>
+    </StackLayout>
+
+</ContentPage>

@@ -11,7 +11,7 @@ namespace _03.ShellTest
             InitializeComponent();
 
 
-            MainPage = new MyShell();
+            MainPage = new AppShell();
         }
 
         protected override void OnStart()
